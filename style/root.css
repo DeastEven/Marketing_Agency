@@ -1,0 +1,121 @@
+*{
+	padding: 0 ;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 10mm;
+	font-size: 30px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root{
+    --color-white:#ffffff;
+    --color-black:#000000;
+
+    --main-bg:#ffffff;
+    --header-bg: #092047;
+    --btn-bg: #1049EF;
+    --section-bg:#FAFAFA;
+
+    --size-title-h1:64px;
+    --size-title-h2:40px;
+    --size-big:48px;
+    --size-med:32px;
+    --size-small:16px;
+
+
+    --size-text-normal:20px;
+
+    --main-font:'Noto Sans', sans-serif;
+    --weight-normal: 400;
+    --weight-bold: 700;
+}
+
+
+body{
+    font-family: var(--main-font);
+    
+}
+
+h2{
+    text-align: center;
+    font-size: var(--size-title-h2);
+    font-weight: var(--weight-bold);
+    line-height: 56px;
+    letter-spacing: 1.5px;
+}
+
+.number-btn  {
+    animation-duration: 1s;
+    animation-timing-function: ease;
+  }
+  .number-btn:hover {
+    animation-name: Tada;
+  }
+  @keyframes Tada {
+    0% {
+      transform: scale(1);
+    }
+    10%, 20% {
+      transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+      transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60%, 80% {
+      transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+}
+
+.btn  {
+    position: relative;
+  }
+  .btn:hover {
+    animation: hide 0.5s ease-in-out 0s infinite alternate both;
+  }
+  @keyframes hide {
+    0% {
+      top: 0;
+      box-shadow: -1px -1px 3px #000;
+    }
+    50% {
+      top: -2px;
+      box-shadow: 1px 1px 3px #000;
+    }
+    100% {
+      top: 2px;
+      box-shadow: 3px 3px 15px #000;
+    }
+  }
